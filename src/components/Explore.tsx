@@ -13,7 +13,7 @@ const Explore = () => {
                 } />
                 <div className="my-9 flex flex-col lg:flex-row min-h-[50vh] gap-8 lg:max-32">
                     {exploreWorlds?.map((item, index) => (
-                        <ExploreCard key={index} item={item} />
+                        <ExploreCard key={index} {...item}/>
                     ))}
                 </div>
             </div>
