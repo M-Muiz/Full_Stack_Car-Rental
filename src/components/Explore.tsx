@@ -1,7 +1,7 @@
 import styles from '@/utils/styles'
 import React from 'react'
 import TitleText from './TitleText'
-import exploreWorlds from '@/utils/exploreWorlds'
+import { exploreWorlds } from '@/utils/data'
 import ExploreCard from './ExploreCard'
 
 const Explore = () => {

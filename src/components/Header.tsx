@@ -8,7 +8,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 const Header = () => {
   const pathname = usePathname()
   const [showMenu, setShowMenu] = React.useState(false);
-  console.log(showMenu)
+  
   return (
     <div className="bg-white shadow-lg flex items-center justify-between h-16 md:px-[10%]">
 
@@ -21,7 +21,7 @@ const Header = () => {
       <div className={`flex ${showMenu ? "flex-col w-full absolute top-16" : "hidden md:flex"} gap-4 bg-white md:flex-row md:items-center md:static md:w-auto items-center`}>
         {
           links?.map((link, ind) => (
-            <Link key={ind} href={link.link} className={`text-main-color font-bold ${pathname === link.link ? "text-red-500" : ""} hover:text-red-500`}>{link.text}</Link>))
+            <Link key={ind} href={link.link} className={`text-black font-bold ${pathname === link.link ? "text-main-color" : ""} hover:text-main-color`}>{link.text}</Link>))
         }
       </div>
     </div>
