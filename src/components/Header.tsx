@@ -21,7 +21,7 @@ const Header = () => {
       <div className={`flex ${showMenu ? "flex-col w-full absolute top-16" : "hidden md:flex"} gap-4 bg-white md:flex-row md:items-center md:static md:w-auto items-center`}>
         {
           links?.map((link, ind) => (
-            <Link key={ind} href={link.link} className={`text-black font-bold ${pathname === link.link ? "text-main-color" : ""} hover:text-main-color`}>{link.text}</Link>))
+            <Link key={ind} href={link.link} className={`text-black font-bold ${pathname === link.link ? "text-main-color" : ""} hover:text-main-color hover:underline`}>{link.text}</Link>))
         }
       </div>
     </div>
