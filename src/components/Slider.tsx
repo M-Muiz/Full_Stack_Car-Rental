@@ -9,27 +9,17 @@ import {
 } from "@/components/ui/carousel"
 import { profile } from "@/utils/data"
 import autoplay from "embla-carousel-autoplay"
-import {
-  Card,
-  CardContent,
-} from "@/components/ui/card"
 
 const Slider = () => {
   return (
     <Carousel plugins={[
-      autoplay({ delay: 2000 })
+      autoplay({ delay: 3000 })
     ]}>
       <CarouselContent>
         {profile?.map((item, index) => (
           <CarouselItem key={index} style={{ backgroundImage: `url(${item.img})` }} className="w-full h-full bg-cover bg-center pt-5 bg-no-repeat pointer-events-none relative">
-            <div></div>
-            <div className="">
-              <Card>
-                <CardContent>
-                  <p>Card Content</p>
-                </CardContent>
-              </Card>
-
+            <div className="absolute top-0 right-0 left-0 bottom-0 bg-[rgba(0,0,0,0.5)]"></div>
+            <div className="h-[50vh] md:h-[70vh]">
             </div>
           </CarouselItem>
         ))}

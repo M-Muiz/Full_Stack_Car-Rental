@@ -5,6 +5,9 @@ export default function Home() {
   return (
 <div className="">
   <Slider/>
+  <div className="relative">
+    
+  </div>
 </div>
   );
 }
