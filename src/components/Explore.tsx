@@ -12,8 +12,8 @@ const Explore = () => {
                     <span className='text-gray-900'>Why <span className='text-main-color'>Ride</span> With <span className='text-main-color'>Us</span> ?</span>
                 } />
                 <div className="my-9 flex flex-col lg:flex-row min-h-[50vh] gap-8 lg:max-32">
-                    {exploreWorlds?.map((item, index) => (
-                        <ExploreCard key={index} {...item} />
+                    {exploreWorlds?.map((item, index)  => (
+                        <ExploreCard key={index} item={item} />
                     ))}
                 </div>
             </div>
