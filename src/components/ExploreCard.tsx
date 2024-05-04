@@ -8,6 +8,6 @@ const ExploreCard = ({ item }: any) => {
       </div>
     </div>
   )
-}
+};
 
 export default ExploreCard;
